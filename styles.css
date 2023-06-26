@@ -1,0 +1,92 @@
+:root {
+  --primary: #96d2aa;
+  --secundary: #e1f8d6;
+  --background: #332e20;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+  margin: 0;
+  background-color: var(--background);
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+header {
+  background-color: var(--primary);
+  padding: 1rem;
+  height: 10vh;
+}
+header h1 {
+  margin: 0;
+  padding-top: 2rem;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--background);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+
+  margin-top: 2rem;
+}
+
+.form input {
+  width: 90%;
+  border-radius: 5px;
+  padding: 0.5em;
+  font-family: inherit;
+}
+
+.form button {
+  width: 90%;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: var(--primary);
+  color: var(--background);
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.form button:hover {
+  background-color: pink;
+  transform: translate(2px, 2px);
+}
+
+main {
+  width: 90%;
+  margin: 2rem auto;
+
+  display: flex;
+  gap: 0.2rem;
+  flex-wrap: wrap;
+}
+
+.compra {
+  background-color: var(--secundary);
+  border: 2px solid var(--background);
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+}
+
+.compra > p {
+  margin: 0;
+}
